@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de inicio</title>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .top-box, .bottom-box {
+            background-color: #ADD8E6; /* Azul claro */
+            height: 100px;
+            width: 100%;
+        }
+
+        .logo-container {
+            position: relative;
+            top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+            margin: 0 auto;
+            flex-wrap: wrap; /* Permitir que los logos se apilen en dispositivos pequeños */
+        }
+
+        .logo-container img {
+            height: 100px; 
+            max-width: 45%; /* Limitar el ancho de los logos */
+        }
+
+        .header-text {
+            text-align: center;
+            margin: 20px 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Línea divisora */
+        .divider {
+            width: 80%;
+            margin: 20px auto;
+            border-bottom: 2px solid gray;
+        }
+
+        /* Contenedor del slider */
+        .image-slider {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            overflow: hidden;
+            border: 2px solid #45a049;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        /* Contenedor interno */
+        .slider-container {
+            display: flex;
+            animation: slide 20s infinite alternate ease-in-out;
+        }
+
+        /* Imágenes individuales */
+        .slider-container img {
+            width: 100%; /* Cada imagen ocupa todo el ancho del contenedor */
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        /* Animación */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-200%); } /* Ajustar según número de imágenes */
+        }
+
+        /* Botones */
+        .button-container {
+            text-align: center;
+            margin: 30px 10px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #ADD8E6;
+        }
+
+        /* Botones inferiores */
+        .bottom-buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: auto; 
+            margin-bottom: 20px;
+            flex-wrap: wrap; /* Adaptarse a dispositivos pequeños */
+        }
+
+        .bottom-buttons button {
+            background-color: transparent;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        .bottom-buttons button:hover {
+            background-color: gray;
+        }
+
+        .bottom-buttons i {
+            margin-right: 10px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-text {
+                font-size: 1.2rem;
+            }
+
+            .button-container a {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+
+            .bottom-buttons button {
+                width: 90%;
+                margin: 5px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .header-text h4,
+            .header-text h5 {
+                font-size: 1rem;
+            }
+
+            .button-container a {
+                font-size: 0.8rem;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cuadro superior -->
+    <div class="top-box"></div>
+
+    <!-- Logos -->
+    <div class="logo-container">
+        <img src="R1.jpg" alt="Logo 1">
+        <img src="R2.jpg" alt="Logo 2">
+    </div>
+
+    <!-- Texto principal -->
+    <div class="header-text">
+        <h2>Universidad de Ciencias y Artes de Chiapas</h2>
+        <h4>Ingeniería Ambiental</h4>
+        <h5>"APROVECHAMIENTO DE RECURSOS DISPONIBLES EN UN INVERNADERO MEDIANTE UN SISTEMA EMBEBIDO"</h5>
+    </div>
+
+    <!-- Línea divisora -->
+    <div class="divider"></div>
+
+    <!-- Figura entre las líneas -->
+    <div class="image-slider">
+        <div class="slider-container">
+            <img src="1.jpeg" alt="Imagen 1">
+            <img src="2.jpeg" alt="Imagen 2">
+            <img src="3.jpeg" alt="Imagen 3">
+            <img src="4.jpeg" alt="Imagen 4">
+            <img src="5.jpeg" alt="Imagen 5">
+        </div>
+    </div>
+
+    <!-- Línea divisora -->
+    <div class="divider"></div>
+
+    <!-- Botones centrados -->
+    <div class="button-container">
+        <a href="https://www.ejemplo1.com" target="_blank">Servidor local</a>
+        <a href="https://io.adafruit.com/Enviromental_green/dashboards/composta" target="_blank">Composta</a>
+        <a href="https://io.adafruit.com/Enviromental_green/dashboards/oscaraaa" target="_blank">Invernadero</a>
+    </div>
+
+    <!-- Línea divisora -->
+    <div class="divider"></div>
+
+    <!-- Cuadro inferior -->
+    <div class="bottom-box"></div>
+
+    <div class="bottom-box">
+        <div class="bottom-buttons">
+            <a href="https://repositorio.unicach.mx/handle/20.500.12753/1989" target="_blank">
+                <button><i class="fas fa-link"></i> Repositorio</button>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=garciagarciaoscaralejandro8@gmail.com">
+                <button><i class="fas fa-envelope"></i> Correo</button>
+            </a>
+            <a href="https://github.com/MokaSama/Tesis" target="_blank">
+                <button><i class="fab fa-github"></i> GitHub</button>
+            </a>
+        </div>
+        <div>
+            <h4><center>@Oscar Alejandro García García 2024</center></h4>
+        </div>
+    </div>
+</body>
+</html>
