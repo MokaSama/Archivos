@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de inicio</title>
-    <!-- Iconos -->
+    <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
@@ -19,7 +19,7 @@
         }
 
         .top-box, .bottom-box {
-            background-color: #ADD8E6; /* Azul claro */
+            background-color: #ADD8E6; 
             height: 100px;
             width: 100%;
         }
@@ -32,12 +32,12 @@
             align-items: center;
             width: 95%;
             margin: 0 auto;
-            flex-wrap: wrap; /* Permitir que los logos se apilen en dispositivos pequeños */
+            flex-wrap: wrap; 
         }
 
         .logo-container img {
             height: 100px; 
-            max-width: 45%; /* Limitar el ancho de los logos */
+            max-width: 45%; 
         }
 
         .header-text {
@@ -47,14 +47,14 @@
             font-weight: bold;
         }
 
-        /* Línea divisora */
+        /* Línea  */
         .divider {
             width: 80%;
             margin: 20px auto;
             border-bottom: 2px solid gray;
         }
 
-        /* Contenedor del slider */
+        /* Contenedor */
         .image-slider {
             width: 100%;
             max-width: 500px;
@@ -65,26 +65,22 @@
             position: relative;
         }
 
-        /* Contenedor interno */
         .slider-container {
             display: flex;
             animation: slide 20s infinite alternate ease-in-out;
         }
 
-        /* Imágenes individuales */
         .slider-container img {
-            width: 100%; /* Cada imagen ocupa todo el ancho del contenedor */
+            width: 100%; 
             object-fit: cover;
             flex-shrink: 0;
         }
 
-        /* Animación */
         @keyframes slide {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-200%); } /* Ajustar según número de imágenes */
+            100% { transform: translateX(-200%); } 
         }
 
-        /* Botones */
         .button-container {
             text-align: center;
             margin: 30px 10px;
@@ -106,14 +102,13 @@
             background-color: #ADD8E6;
         }
 
-        /* Botones inferiores */
         .bottom-buttons {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-top: auto; 
             margin-bottom: 20px;
-            flex-wrap: wrap; /* Adaptarse a dispositivos pequeños */
+            flex-wrap: wrap; 
         }
 
         .bottom-buttons button {
@@ -136,7 +131,7 @@
             margin-right: 10px;
         }
 
-        /* Responsividad */
+        /*  */
         @media (max-width: 768px) {
             .logo-container {
                 flex-direction: column;
@@ -176,26 +171,21 @@
     </style>
 </head>
 <body>
-    <!-- Cuadro superior -->
     <div class="top-box"></div>
 
-    <!-- Logos -->
     <div class="logo-container">
         <img src="R1.jpg" alt="Logo 1">
         <img src="R2.jpg" alt="Logo 2">
     </div>
 
-    <!-- Texto principal -->
     <div class="header-text">
         <h2>Universidad de Ciencias y Artes de Chiapas</h2>
         <h4>Ingeniería Ambiental</h4>
         <h5>"APROVECHAMIENTO DE RECURSOS DISPONIBLES EN UN INVERNADERO MEDIANTE UN SISTEMA EMBEBIDO"</h5>
     </div>
 
-    <!-- Línea divisora -->
     <div class="divider"></div>
 
-    <!-- Figura entre las líneas -->
     <div class="image-slider">
         <div class="slider-container">
             <img src="1.jpeg" alt="Imagen 1">
@@ -206,20 +196,16 @@
         </div>
     </div>
 
-    <!-- Línea divisora -->
     <div class="divider"></div>
 
-    <!-- Botones centrados -->
     <div class="button-container">
         <a href="https://www.ejemplo1.com" target="_blank">Servidor local</a>
         <a href="https://io.adafruit.com/Enviromental_green/dashboards/composta" target="_blank">Composta</a>
         <a href="https://io.adafruit.com/Enviromental_green/dashboards/oscaraaa" target="_blank">Invernadero</a>
     </div>
 
-    <!-- Línea divisora -->
     <div class="divider"></div>
 
-    <!-- Cuadro inferior -->
     <div class="bottom-box"></div>
 
     <div class="bottom-box">
